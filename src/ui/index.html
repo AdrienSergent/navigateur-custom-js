@@ -3,8 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Navigateur custom JS</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>Navigateur custom JS initialisé !</h1>
+  <header class="navbar">
+    <button id="back">⬅️</button>
+    <button id="forward">➡️</button>
+    <button id="reload">🔄</button>
+    <input id="url-bar" type="text" placeholder="Entrez l'URL">
+    <button id="go">Go</button>
+    <button id="new-tab">＋ Onglet</button>
+  </header>
+
+  <div id="tabs-container">
+    <div class="tab active" data-tab-id="1">Nouvel Onglet</div>
+  </div>
+
+  <main id="webview-container">
+    <!-- Le contenu HTML sera rendu ici -->
+  </main>
+
+  <script src="./renderer.js"></script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 4px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    align-items: center;
+  }
+  
+  #url-bar {
+    flex: 1;
+    padding: 4px;
+  }
+  
+  #tabs-container {
+    display: flex;
+    background-color: #ddd;
+    padding: 4px;
+  }
+  
+  .tab {
+    padding: 6px 12px;
+    background-color: #bbb;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #fff;
+    font-weight: bold;
+  }
+  
+  #webview-container {
+    padding: 10px;
+    overflow-y: auto;
+    height: calc(100vh - 80px);
+    background-color: #fff;
+  }
+  

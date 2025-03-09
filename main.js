@@ -7,15 +7,12 @@ function createMainWindow() {
     height: 800,
     webPreferences: {
       preload: path.join(__dirname, 'src/ui/preload.js'),
-      nodeIntegration: false,
       contextIsolation: true,
     },
   });
 
-  // Charger correctement ton fichier index.html
-  mainWindow.loadFile(path.join(__dirname, 'src/ui/index.html'));
-
-  mainWindow.webContents.openDevTools(); // Optionnel pour le debug
+  mainWindow.loadFile('src/ui/index.html');
+  mainWindow.webContents.openDevTools(); // Optionnel pour debug
 }
 
 app.whenReady().then(createMainWindow);
