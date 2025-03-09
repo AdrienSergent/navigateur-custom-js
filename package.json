@@ -1,0 +1,23 @@
+{
+  "name": "navigateur-custom",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrienSergent/navigateur-custom-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrienSergent/navigateur-custom-js/issues"
+  },
+  "homepage": "https://github.com/AdrienSergent/navigateur-custom-js#readme",
+  "description": "",
+  "devDependencies": {
+    "electron": "^35.0.0"
+  }
+}
